@@ -1,0 +1,87 @@
+#wrapper {
+    display: grid;
+    grid-template-areas:
+        "nav-border nav-border"
+        "spread spread"
+        "border-1 border-1"
+        "overview overview"
+        "border-2 border-2"
+        "process process";
+    grid-template-columns: 1fr;
+    grid-template-rows: 7px 600px 30px 400px 30px;
+}
+
+
+
+/* ===== Spread ===== */
+
+#spread {
+    grid-area:spread;
+    font-family:'Segoe UI';
+    background-image: url(../media/title-background.png), url(../media/tears-of-the-kingdom.webp);
+    background-size: cover;
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+}
+
+#spread-text {
+    display: flex;
+    flex-direction:column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#spread-text h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+
+/* ===== Border ===== */
+
+.border {
+    background-image: url(../media/separator-pattern.jpg);
+    background-size:contain;
+}
+
+#nav-border { 
+    grid-area: nav-border; 
+    background-size: 200px 100px;
+}
+#border-1 { grid-area: border-1; }
+#border-2 { grid-area: border-2; }
+
+
+
+/* ===== Overview ===== */
+
+#overview {
+    grid-area: overview;
+    font-size: 16pt;
+    display: flex;
+    justify-content:center;
+    gap: 80px;
+}
+
+#overview-blurb {
+    width: 40%;
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+#overview-skills {
+    width: 20%;
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+#overview-skills p {
+    margin: -1rem auto 2rem 3rem;
+}
+
+h3 {
+    font-family: 'Segoe UI';
+}

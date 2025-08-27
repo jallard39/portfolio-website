@@ -1,0 +1,120 @@
+body {
+    background-color: #0d1029;
+    color:white;
+    font-family: 'DM Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13pt;
+}
+
+.button {
+    color:black;
+    background-color:#ffd400;
+    font-family:'DM Sans';
+    font-weight:900;
+    margin-top: 15px;
+    padding: 20px 15px 15px 15px;
+    border-radius:10px;
+    width:200px;
+    height: 25px;
+    transition: background-color 0.2s linear, border-color 0.2s linear;
+    border-bottom: 8px solid #ff9500;
+    text-decoration:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+i {
+    padding: 4.5px;
+}
+
+.button:hover,
+.button:focus {
+    background-color:#ff9500;
+    border-color:#e86400;
+    cursor: pointer;
+}
+
+.button:active {
+    margin-top: 23px;
+    border-width: 0px;
+}
+
+/* ===== Header ===== */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    gap: 10px;
+}
+
+nav {
+    flex-grow: 10;
+}
+
+#name {
+    flex-grow:0;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+#name a,
+#name link,
+#name visited {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link a,
+.nav-link a:link,
+.nav-link a:visited,
+.nav-link p {
+    color: white;
+    text-align: center;
+    margin: 7px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-link a:hover,
+.nav-link a:focus,
+.nav-link a:active {
+    text-decoration: underline;
+}
+
+
+
+#links {
+    flex-grow: 0;
+    justify-self: right;
+    display: flex;
+    flex-direction: row;
+}
+
+#links li {
+    display: block;
+    font-size: 12pt;
+    margin: 5px;
+}
+
+#links i {
+    margin-right: 5px;
+}
+
+
+/* ===== Banner ===== */
+
+#banner > * {
+    border: solid 2px white;
+}
+
+#banner {
+    border: solid 2px white;
+    margin: 5rem 15rem;
+}
+
+.role-big {
+    font-size: 70pt;
+}

@@ -1,0 +1,8 @@
+#spread {
+    background-image: url(../../media/title-background.png), url(../../media/totk-champions.jpg);
+}
+
+#spread .button {
+    width: 200px;
+    padding-left: 20px;
+}

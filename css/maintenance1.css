@@ -1,0 +1,165 @@
+body {
+    background-color: #0d1029;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13pt;
+}
+
+h1 {
+    color: white;
+}
+
+#content {
+    margin: 50px auto;
+    width: 50%;
+    padding: 30px;
+    position: relative;
+}
+
+#text {
+    margin-bottom: 200px;
+}
+
+.button {
+    color:black;
+    font-weight:bold;
+    padding:15px;
+    border-radius:10px;
+    width:200px;
+    height: 25px;
+    transition: background-color 0.2s linear, border-color 0.2s linear;
+    border-bottom: 8px solid black;
+    position: absolute;
+}
+
+#button-email {
+    background-color:#ffa9c3;
+    right: 0px;
+    bottom: 90px;
+    border: 5px solid #fb759d;
+    width: 190px;
+    height: 20px;
+}
+
+#button-linkedin {
+    background-color:#ffd400;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 195px;
+    bottom:20px;
+    right: 0px;
+    border-color: #ff9500;
+    text-decoration:none;
+}
+
+i {
+    padding: 4px;
+}
+
+#button-arrow {
+    float: right;
+    font-size:20pt;
+    margin: -2.5px 10px;
+}
+
+#button-linkedin:hover,
+#button-linkedin:focus,
+.link-button.odd:hover,
+.link-button.odd:focus {
+    background-color:#ff9500;
+    border-color:#e86400;
+    cursor: pointer;
+}
+
+.link-button.even:hover,
+.link-button.even:focus {
+    background-color:#ff81a7;
+    border-color:#e74475;
+    cursor: pointer;
+}
+
+.link-button label:hover,
+.link-button label:focus {
+    cursor: pointer;
+}
+
+#button-linkedin:visited,
+.link-button:visited {
+    text-decoration:dashed;
+}
+
+#button-linkedin:active {
+    margin-top: 8px;
+    border-width: 0px;
+}
+
+.link-button:active {
+    margin-top: 10px;
+    border-width: 0px;
+}
+
+#button-email:hover {
+    cursor:text;
+}
+
+.link-button {
+    color:black;
+    background-color: white;
+    text-align:center;
+    font-weight:bold;
+    text-decoration: none;
+    padding:15px;
+    border-radius:10px;
+    width:150px;
+    height: 130px;
+    transition: background-color 0.2s linear, border-color 0.2s linear;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    position: relative;
+    border-bottom: 10px solid white;
+}
+
+.link-button h1 {
+    color: black;
+    font-size: 13pt;
+}
+
+.link-button label {
+    font-style:italic;
+    font-weight:normal;
+    font-size:10pt;
+}
+
+.link-button i {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.link-button.odd {
+    background-color:#ffd400;
+    border-color:#ff9500;
+}
+
+.link-button.even {
+    background-color:#ffa9c3;
+    border-color:#fb759d;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items:end;
+}
+
+#buttons {
+    position: relative;
+}
+
+#filler {
+    flex-grow: max-width;
+}
