@@ -1,0 +1,95 @@
+/* ===== Page Layout ===== */
+
+#content {
+    width: 60%;
+    margin-top: 0px;
+}
+
+#title {
+    margin-bottom: 1em;
+}
+
+#description {
+    margin-bottom: 1.5rem;
+}
+
+#projects {
+    flex-flow: column nowrap;
+    width:100%;
+    margin: 2rem 0rem;
+    align-items:start;
+    gap: 2rem;
+}
+
+/* ===== Button Changes ===== */
+
+.small.button {
+    display:block;
+    width: 200px;
+    height:fit-content;
+}
+
+#button-home {
+    position: fixed;
+    width:fit-content;
+    left: 2rem;
+    top: 2rem;
+    font-size: 16pt;
+}
+
+.text-note {
+    font-size: 11pt;
+    color:rgb(187, 187, 187);
+    font-style:italic;
+}
+
+/* ===== Project Layout ===== */
+
+.project {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+
+    width:100%;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
+
+    border-radius:10px;
+    border-width:5px;
+    border-style:solid;
+}
+
+.project-text {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.project h2 { margin:0px; }
+.project p { 
+    display: block; 
+    margin-bottom: auto;
+    font-size: 12pt;
+}
+.project p a, #description a { color: rgb(153, 174, 255); }
+.project p a:visited, #description a { color: rgb(173, 153, 255); }
+
+.project .button { 
+    font-size: 14pt;
+}
+
+.project img {
+    width: 400px;
+    height: 225px;
+}
+
+.project.color1 {
+    background-color: transparent;
+    border-color:#ffd400;
+    justify-content: space-between;
+}
+
+.project.color2 {
+    background-color: transparent;
+    border-color:#ffa9c3;
+    justify-content: start;
+}

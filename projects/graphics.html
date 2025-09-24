@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Graphics Projects</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/project-pages/graphics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <header>
+        <a id="button-home" class="small button color1" href="../index.html">
+            <i id="button-arrow-left" class="fa-solid fa-arrow-left"></i>
+            Back to Home
+        </a>
+    </header>
+
+    <div id="content">
+        <div id="title">
+            <h1>Graphics Programming for Games</h1>
+        </div>
+
+        <div id="description">
+            <p>This is a collection of projects that explore game graphics simulation and common graphics programming techniques, created in Chris Cascioli's Game Graphics Programming sequence at RIT (IGME 540 & 542). Each project is its own engine, coded in C++ using Microsoft's DirectX API. While most of these projects were coded by me, select portions of code were written by <a href="https://github.com/vixorien">Chris Cascioli (GitHub: @vixorien)</a>.</p>
+            <p class="text-note">Note: Some visual artifacting occurred when generating the images on this page. This artifacting is not present in the real projects.</p>
+        </div>
+
+        <div class="border"></div>
+
+        <div id="projects">
+            <div id="d3d11-basic" class="project color1">
+                <div class="project-text">
+                    <h2>Direct3D 11 Basic Engine</h2>
+                    <p>Entities have unique meshes, transforms, and materials with albedo, metal, roughness, and normal mapping. Also supports PBR lighting & shadows, multiple cameras, custom skyboxes, and post processing.</p>
+                    <a class="small button color1" href="https://github.com/jallard39/game-graphics-programming-intro/tree/main/DX11Starter">
+                        View on GitHub
+                        <i id="button-arrow-right" class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <img src="../media/d3d11-basic.gif"></img>
+            </div>
+
+            <div id="d3d12-basic" class="project color2">
+                <img src="../media/d3d12-basic.gif"></img>
+                <div class="project-text">
+                    <h2>Direct3D 12 Basic Engine</h2>
+                    <p>Attempting a similar graphics engine with the more complex and customizable Direct3D 12, which offers the potential of at increased efficiency at the cost of much more work on the backend.</p>
+                    <a class="small button color2" href="https://github.com/jallard39/game-graphics-programming-2/tree/main/D3D12Starter">
+                        View on GitHub
+                        <i id="button-arrow-right" class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="offline-raytracer" class="project color1">
+                <div class="project-text">
+                    <h2>Offline Raytracer</h2>
+                    <p>An introduction to basics of raytracing, following a tutorial from the book <a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html" target="_blank">Raytracing in One Weekend</a> by Peter Shirley, Trevor David Black, and Steve Hollasch. Generates and exports a single image.</p>
+                    <a class="small button color1" href="https://github.com/jallard39/game-graphics-programming-2/tree/main/OfflineRayTracer">
+                        View on GitHub
+                        <i id="button-arrow-right" class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <img src="../media/offline-raytracing.png"></img>
+            </div>
+
+            <div id="realtime-raytracer" class="project color2">
+                <img src="../media/realtime-raytracing.gif"></img>
+                <div class="project-text">
+                    <h2>D3D12 Real-Time Pathtracer</h2>
+                    <p>Building off the basics of the offline raytracer, this raytracer is optimized in Direct3D 12 for real-time simulation. Runs at 42 fps with 25 rays per pixel and a recursion depth of 10.</p>
+                    <a class="small button color2" href="https://github.com/jallard39/game-graphics-programming-2/tree/main/RealTimeRayTracing">
+                        View on GitHub
+                        <i id="button-arrow-right" class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="d3d11-particles" class="project color1">
+                <div class="project-text">
+                    <h2>Particles in Direct3D 11</h2>
+                    <p>Returning to Direct3D 11, this project adds particle emitters to the basic engine project. Each emitter has its own custom parameters and particle texture.</p>
+                    <a class="small button color1" href="https://github.com/jallard39/game-graphics-programming-2/tree/main/D3D11Particles">
+                        View on GitHub
+                        <i id="button-arrow-right" class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <img src="../media/graphics-particles.gif"></img>
+            </div>
+
+            <div id="d3d11-refraction" class="project color2">
+                <img src="../media/graphics-refraction.gif"></img>
+                <div class="project-text">
+                    <h2>Refraction in Direct3D 11</h2>
+                    <p>Adds another advanced effect to the Direct3D graphics engine. This addition gives some materials an adjustable refraction coefficient, causing them to distorting light in a physically realistic way.</p>
+                    <a class="small button color2" href="https://github.com/jallard39/game-graphics-programming-2/tree/main/D3D11Refraction">
+                        View on GitHub
+                        <i id="button-arrow-right" class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+</html>
